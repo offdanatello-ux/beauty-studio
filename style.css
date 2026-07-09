@@ -523,7 +523,7 @@ footer nav{
 }
 footer nav a:hover{
 
-    color:#f5c518;
+    color:#895d5d;
 
 }
 .social{
@@ -572,7 +572,7 @@ footer p{
 
     h1{
 
-        font-size:48px;
+    font-size:72px;
 
     }
 
@@ -582,21 +582,41 @@ footer p{
 
         margin-left:0;
 
-        padding:20px;
+        padding:25px;
 
     }
+    .hero{
+    min-height:100vh;
+    background-position:65% center;
+}
+
+    .hero h1{
+    font-size:72px;
+    line-height:0.95;
+}
 
     .content p{
 
-        font-size:22px;
+        font-size:18px;
 
     }
 
     .cards{
-
-        flex-direction:column;
-
+    padding:25px;
+    flex-direction:column;
     }
+    .card img{
+    height:260px;
+}
+
+.card h3{
+    font-size:22px;
+}
+
+.card p{
+    font-size:17px;
+    line-height:1.6;
+}
 
     .advantages-cards{
 
@@ -609,13 +629,21 @@ footer p{
         flex-direction:column;
 
     }
-
+    .gallery{
+    padding:60px 25px;
+}
     .gallery-grid{
 
-        grid-template-columns:repeat(2,1fr);
+      grid-template-columns:1fr;
 
     }
+    .review{
+    padding:30px;
+}
 
+.review h3{
+    font-size:24px;
+}
     .reviews-cards{
 
         flex-direction:column;
@@ -629,5 +657,32 @@ footer p{
         align-items:center;
 
     }
+    .contact-item{
+    width:100%;
+}
+    .about{
+    flex-direction:column;
+    padding:60px 25px;
+}
+
+.about-image img{
+    height:350px;
+}
+
+.about-content h2{
+    font-size:48px;
+    text-align:center;
+}
+
+.about-content p{
+    font-size:20px;
+}
+
+.about-content li{
+    font-size:20px;
+}
+.master img{
+    height:420px;
+}
 
 }
