@@ -893,3 +893,11 @@ footer p{
 }
 
 }
+footer nav a{
+    color:white !important;
+    text-shadow:none;
+}
+
+footer nav a:hover{
+    color:#EAE5E4 !important;
+}
