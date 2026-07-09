@@ -73,8 +73,8 @@ p{
 }
 
 button{
-    background:#8b7251;
-    color:rgb(255, 255, 255);
+     background:#9A7B4F;
+    color:white;
     border:none;
     padding:20px 45px;
     font-size:20px;
@@ -87,7 +87,7 @@ button{
 }
 .btn{
     display:inline-block;
-    background:#8b7251;
+    background:#9A7B4F;
     color:white;
     text-decoration:none;
     border:none;
@@ -101,9 +101,10 @@ button{
 }
 
 .btn:hover{
+     background:#7F633F;
     color:white;
     transform:translateY(-5px);
-    box-shadow:0 20px 40px rgba(255,255,255,.35);
+    box-shadow:0 20px 40px rgba(154,123,79,.35);
 }
 .header-button button{
     padding: 12px 28px;
@@ -151,14 +152,15 @@ nav{
 
 nav a{
     text-decoration:none;
-    color:#895d5d;
+    color:#5F4642;
     font-size:18px;
+    font-weight:600;
     text-shadow:none;
 }
 
 nav a:hover{
 
-    color:#b5b5b5;
+   color:#9A7B4F;
    text-shadow: 1px 1px 3px rgba(0,0,0,.2);
 
 }
@@ -438,7 +440,7 @@ nav a:hover{
 }
 .review p{
 
-    color:#8b7251;
+    color:#9A7B4F;
 
     font-size:18px;
 
@@ -519,7 +521,7 @@ nav a:hover{
 }
 footer{
 
-    background:#8b7251;
+    background:#9A7B4F;
 
     color:white;
 
@@ -627,7 +629,7 @@ footer p{
     position:fixed;
     right:30px;
     bottom:30px;
-    background:#8b7251;
+    background:#9A7B4F;
     color:white;
     text-decoration:none;
     padding:18px 28px;
@@ -859,6 +861,7 @@ footer p{
     .social{
         flex-direction:column;
         gap:15px;
+        color:#555
     }
     .prices{
     padding:70px 25px;
