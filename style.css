@@ -174,7 +174,7 @@ nav a:hover{
 .services{
     padding: 70px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     
     
 }
@@ -587,7 +587,7 @@ footer p{
 
 }
 .prices{
-    padding:100px 80px;
+    padding:40px 80px 100px;
     background:#ffffff;
     text-align:center;
 }
