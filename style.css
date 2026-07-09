@@ -348,6 +348,12 @@ nav a:hover{
 .master button{
     margin-bottom:30px;
 }
+.master .btn{
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:16px 45px;
+    font-size:18px;
+}
 .gallery{
     padding:100px 80px;
     text-align:center;
