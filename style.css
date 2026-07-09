@@ -602,34 +602,75 @@ footer p{
     }
 
     .cards{
-    padding:25px;
-    flex-direction:column;
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    scroll-snap-type:x mandatory;
+    padding-bottom:15px;
+    
     }
+    .card{
+    min-width:300px;
+    flex:none;
+    scroll-snap-align:start;
+}
     .card img{
     height:260px;
 }
+    .cards::-webkit-scrollbar{
+    display:none;
+}
 
-.card h3{
+    .card h3{
     font-size:22px;
 }
 
-.card p{
+   .card p{
     font-size:17px;
     line-height:1.6;
 }
 
+
     .advantages-cards{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    scroll-snap-type:x mandatory;
+    padding-bottom:15px;
+}
+   .advantage{
+    min-width:280px;
+    flex:none;
 
-        flex-direction:column;
-
-    }
+    scroll-snap-align:start;
+}
+.advantages-cards::-webkit-scrollbar{
+    display:none;
+}
 
     .masters-cards{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
 
-        flex-direction:column;
+    scroll-snap-type:x mandatory;
 
-    }
-    .gallery{
+    padding-bottom:15px;
+}
+.master{
+    min-width:300px;
+    flex:none;
+
+    scroll-snap-align:start;
+}
+.masters-cards::-webkit-scrollbar{
+    display:none;
+}
+.master img{
+    height:380px;
+}
+
+.gallery{
     padding:60px 25px;
 }
     .gallery-grid{
@@ -637,30 +678,48 @@ footer p{
       grid-template-columns:1fr;
 
     }
-    .review{
-    padding:30px;
+.review{
+    min-width:300px;
+    flex:none;
+
+    scroll-snap-align:start;
 }
 
 .review h3{
     font-size:24px;
 }
-    .reviews-cards{
+.reviews-cards{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
 
-        flex-direction:column;
+    scroll-snap-type:x mandatory;
 
-    }
-
-    .contacts-box{
-
-        flex-direction:column;
-
-        align-items:center;
-
-    }
-    .contact-item{
-    width:100%;
+    padding-bottom:15px;
 }
-    .about{
+.reviews-cards::-webkit-scrollbar{
+    display:none;
+}
+
+.contacts-box{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+
+    scroll-snap-type:x mandatory;
+
+    padding-bottom:15px;
+}
+.contact-item{
+    min-width:280px;
+    flex:none;
+
+    scroll-snap-align:start;
+}
+.contacts-box::-webkit-scrollbar{
+    display:none;
+}
+.about{
     flex-direction:column;
     padding:60px 25px;
 }
@@ -680,9 +739,6 @@ footer p{
 
 .about-content li{
     font-size:20px;
-}
-.master img{
-    height:420px;
 }
 
 }
