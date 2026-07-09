@@ -560,185 +560,220 @@ footer p{
 }
 @media (max-width:768px){
 
-    header{
-
-        flex-direction:column;
-
-        gap:20px;
-
-        padding:20px;
-
+    html,
+    body{
+        overflow-x:hidden;
     }
 
-    h1{
+    header{
+        flex-direction:column;
+        gap:18px;
+        padding:20px;
+        position:absolute;
+    }
 
-    font-size:72px;
+    nav{
+        gap:22px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 
+    nav a{
+        font-size:18px;
+    }
+
+    .header-button button{
+        padding:12px 30px;
+        font-size:16px;
+    }
+
+    .hero{
+        min-height:100vh;
+        background-position:65% center;
+        align-items:center;
     }
 
     .content{
-
         width:100%;
-
         margin-left:0;
-
         padding:25px;
-
     }
-    .hero{
-    min-height:100vh;
-    background-position:65% center;
-}
 
     .hero h1{
-    font-size:72px;
-    line-height:0.95;
-}
+        font-size:68px;
+        line-height:0.95;
+        margin-bottom:20px;
+    }
 
     .content p{
+        font-size:22px;
+        margin-bottom:35px;
+    }
 
+    button{
+        padding:18px 38px;
         font-size:18px;
-
     }
 
-    .cards{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
-    scroll-snap-type:x mandatory;
-    padding-bottom:15px;
-    
+    .services,
+    .advantages,
+    .masters,
+    .gallery,
+    .reviews,
+    .contacts{
+        padding:70px 25px;
+        margin-bottom:0;
     }
+
+    .services h2,
+    .advantages h2,
+    .masters h2,
+    .gallery h2,
+    .reviews h2,
+    .contacts h2{
+        font-size:42px;
+        line-height:1.15;
+        margin-bottom:45px;
+    }
+
+    .cards,
+    .advantages-cards,
+    .masters-cards,
+    .reviews-cards,
+    .contacts-box{
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+        overflow-x:visible;
+        scroll-snap-type:none;
+    }
+
+    .card,
+    .advantage,
+    .master,
+    .review,
+    .contact-item{
+        width:100%;
+        max-width:430px;
+        min-width:0;
+        flex:none;
+        scroll-snap-align:none;
+    }
+
     .card{
-    min-width:300px;
-    flex:none;
-    scroll-snap-align:start;
-}
+        padding:28px;
+    }
+
     .card img{
-    height:260px;
-}
-    .cards::-webkit-scrollbar{
-    display:none;
-}
+        height:260px;
+    }
 
     .card h3{
-    font-size:22px;
-}
-
-   .card p{
-    font-size:17px;
-    line-height:1.6;
-}
-
-
-    .advantages-cards{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
-    scroll-snap-type:x mandatory;
-    padding-bottom:15px;
-}
-   .advantage{
-    min-width:280px;
-    flex:none;
-
-    scroll-snap-align:start;
-}
-.advantages-cards::-webkit-scrollbar{
-    display:none;
-}
-
-    .masters-cards{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
-
-    scroll-snap-type:x mandatory;
-
-    padding-bottom:15px;
-}
-.master{
-    min-width:300px;
-    flex:none;
-
-    scroll-snap-align:start;
-}
-.masters-cards::-webkit-scrollbar{
-    display:none;
-}
-.master img{
-    height:380px;
-}
-
-.gallery{
-    padding:60px 25px;
-}
-    .gallery-grid{
-
-      grid-template-columns:1fr;
-
+        font-size:30px;
+        line-height:1.2;
     }
-.review{
-    min-width:300px;
-    flex:none;
 
-    scroll-snap-align:start;
-}
+    .card p{
+        font-size:20px;
+        line-height:1.5;
+    }
 
-.review h3{
-    font-size:24px;
-}
-.reviews-cards{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
+    .about{
+        flex-direction:column;
+        padding:70px 25px;
+        gap:40px;
+    }
 
-    scroll-snap-type:x mandatory;
+    .about-image{
+        width:100%;
+    }
 
-    padding-bottom:15px;
-}
-.reviews-cards::-webkit-scrollbar{
-    display:none;
-}
+    .about-image img{
+        height:350px;
+    }
 
-.contacts-box{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
+    .about-content{
+        width:100%;
+        text-align:center;
+    }
 
-    scroll-snap-type:x mandatory;
+    .about-content h2{
+        font-size:42px;
+        line-height:1.2;
+    }
 
-    padding-bottom:15px;
-}
-.contact-item{
-    min-width:280px;
-    flex:none;
+    .about-content p{
+        font-size:20px;
+        line-height:1.7;
+    }
 
-    scroll-snap-align:start;
-}
-.contacts-box::-webkit-scrollbar{
-    display:none;
-}
-.about{
-    flex-direction:column;
-    padding:60px 25px;
-}
+    .about-content li{
+        font-size:20px;
+    }
 
-.about-image img{
-    height:350px;
-}
+    .advantage h3{
+        font-size:45px;
+    }
 
-.about-content h2{
-    font-size:48px;
-    text-align:center;
-}
+    .advantage h4{
+        font-size:26px;
+    }
 
-.about-content p{
-    font-size:20px;
-}
+    .advantage p{
+        font-size:18px;
+        line-height:1.5;
+    }
 
-.about-content li{
-    font-size:20px;
-}
+    .master img{
+        height:380px;
+    }
+
+    .master h3{
+        font-size:30px;
+    }
+
+    .master p{
+        font-size:20px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .gallery-grid img{
+        height:330px;
+    }
+
+    .review{
+        padding:35px;
+    }
+
+    .review h3{
+        font-size:26px;
+    }
+
+    .review p{
+        font-size:20px;
+        line-height:1.6;
+    }
+
+    .contact-item{
+        padding:35px;
+    }
+
+    .contact-item h3{
+        font-size:28px;
+    }
+
+    .contact-item p{
+        font-size:20px;
+    }
+
+    footer nav,
+    .social{
+        flex-direction:column;
+        gap:15px;
+    }
 
 }
