@@ -3,7 +3,9 @@
     padding:0;
     box-sizing:border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family:Playfair Display;
     background:#ffffff;
@@ -82,6 +84,26 @@ button{
     box-shadow:0 15px 40px rgba(0,0,0,.25);
     transition:0.3s;
     font-family:  Playfair Display;
+}
+.btn{
+    display:inline-block;
+    background:#597054;
+    color:white;
+    text-decoration:none;
+    border:none;
+    padding:20px 45px;
+    font-size:20px;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    transition:.3s;
+    font-family:Playfair Display;
+}
+
+.btn:hover{
+    color:white;
+    transform:translateY(-5px);
+    box-shadow:0 20px 40px rgba(255,255,255,.35);
 }
 .header-button button{
     padding: 12px 28px;
