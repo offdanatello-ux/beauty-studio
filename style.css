@@ -73,7 +73,7 @@ p{
 }
 
 button{
-    background:#597054;
+    background:#8b7251;
     color:rgb(255, 255, 255);
     border:none;
     padding:20px 45px;
@@ -87,7 +87,7 @@ button{
 }
 .btn{
     display:inline-block;
-    background:#597054;
+    background:#8b7251;
     color:white;
     text-decoration:none;
     border:none;
@@ -118,17 +118,17 @@ button:hover{
     
 }
 header{
-
     display:flex;
-
-    justify-content:space-between;
-
+    justify-content:center;
     align-items:center;
-
-    padding:30px 80px;
-    position: absolute;
-    width: 100%;
-    background: transparent;
+    padding:25px 80px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    z-index:1000;
 
 }
 
@@ -150,13 +150,10 @@ nav{
 }
 
 nav a{
-
     text-decoration:none;
-    color:#ffffff;
+    color:#895d5d;
     font-size:18px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,.2);
-    
-
+    text-shadow:none;
 }
 
 nav a:hover{
@@ -441,7 +438,7 @@ nav a:hover{
 }
 .review p{
 
-    color:#597054;
+    color:#8b7251;
 
     font-size:18px;
 
@@ -522,7 +519,7 @@ nav a:hover{
 }
 footer{
 
-    background:#597054;
+    background:#8b7251;
 
     color:white;
 
@@ -630,7 +627,7 @@ footer p{
     position:fixed;
     right:30px;
     bottom:30px;
-    background:#597054;
+    background:#8b7251;
     color:white;
     text-decoration:none;
     padding:18px 28px;
@@ -654,11 +651,11 @@ footer p{
     }
 
     header{
-        flex-direction:column;
-        gap:18px;
-        padding:20px;
-        position:absolute;
-    }
+    flex-direction:column;
+    gap:15px;
+    padding:18px 20px;
+    position:fixed;
+}
 
     nav{
         gap:22px;
